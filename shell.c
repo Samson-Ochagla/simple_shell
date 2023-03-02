@@ -39,10 +39,10 @@ int main(int ac, char **av)
 		if (fork_process(child, string, toktok) == -1)
 		{
 			 validate_input(&string, av[0], errors);
-			 _free(tokttok);
+			 _free(toktok);
 			 exit(EXIT_FAILURE);
 		}
-		erros++;
+		errors++;
 	}
 	free(string);
 	return (0);
